@@ -1,13 +1,48 @@
-.layer {
-	height: 20vh;	
+@mixin vertical-align {
+  position: relative;
+  top: 50%;
+  -webkit-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
 }
+
+.layer {
+	position: relative;
+	height: 50vh;	
+}
+
+.table, .table-bordered {
+	@include vertical-align;
+	margin-right: 25px;
+	max-width: 40%;
+	width: 50%;
+	background-color: rgba(255, 255, 255, .8);
+	border: 3px solid white;
+}
+
+.table-bordered>thead>tr>th, 
+.table-bordered>tbody>tr>th, 
+.table-bordered>tfoot>tr>th, {
+	font-size: 2em;
+	line-height: 1em;
+}
+
+.table-bordered>thead>tr>td, 
+.table-bordered>tbody>tr>td, 
+.table-bordered>tfoot>tr>td {
+	border: 2px solid white;
+}
+
+	img {
+		position: absolute;
+		vertical-align: bottom;
+	}
 
 #inner-core {
 	background-image: url(../img/InnerCore.png);
 	background-color: #F1C919; }
 
 #outer-core {
-	background-image: url(../img/OuterCore.png);
 	background-color: #FCA41C; }
 
 #Mantle {
@@ -22,36 +57,68 @@
 	background-color: green; }
 
 #Troposphere {
-	position: relative;
 	height: 80vh;
-	background-image: url(../img/Troposphere.png);
 	background-color: #80D6F7; 
-	img {
-		position: absolute;
-		vertical-align: bottom;
-	}
 	#everest {
 		bottom: 0;
 	}
 	#clouds1 {
-		left: 60%;
+		top: 15%;		
+	-webkit-animation: moveclouds 45s linear infinite;
+	-moz-animation: moveclouds 45s linear infinite;
+	-o-animation: moveclouds 45s linear infinite;
+
+	}
+	#clouds2 {
+	-webkit-animation: moveclouds2 45s linear infinite;
+	-moz-animation: moveclouds2 45s linear infinite;
+	-o-animation: moveclouds2 45s linear infinite;
+	}
+	#clouds3 {
+		opacity: 20%;
+		top: 20%;
+		-webkit-animation: moveclouds3 25s linear infinite;
+		-moz-animation: moveclouds3 25s linear infinite;
+		-o-animation: moveclouds3 25s linear infinite;
 	}
 }
 
 
 
-
-
 #Stratosphere {
 	background-image: url(../img/Stratosphere.png);
-	background-color: #00ADEF; }
+	background-color: #00ADEF; 
+	#balloon {
+		-webkit-animation: balloonMove 5s linear infinite;
+		-moz-animation: balloonMove 5s linear infinite;
+		-o-animation: balloonMove 55s linear infinite;
+
+	}
+}
 
 #Mesosphere {
-	background-image: url(../img/Mesosphere.png);
 	background-color: #3478FF; }
+	#meteor {
+		-webkit-animation: meteorMove 5s linear infinite;
+		-moz-animation: meteorMove 5s linear infinite;
+		-o-animation: meteroMove 5s linear infinite;
+	}
+	#meteor2 {
+		top: 10px;
+		-webkit-animation: meteorMove 2s linear infinite;
+		-moz-animation: meteorMove 2s linear infinite;
+		-o-animation: meteroMove 2s linear infinite;
+}
 
 #Thermosphere {
 	background-color: #246CFE; 
+	#Aurora1 {
+		left: 5%;
+	}
+	#Aurora2 {
+		top: 10%;
+		left: 20%;
+	}
 }
 
 #Exosphere {
@@ -112,10 +179,81 @@
 	background-color: black;
 }
 
-table {
-	border: 3px solid white;
+@-webkit-keyframes moveclouds {
+	0% {margin-left: 100%;}
+	30% {margin-left: 0%;}
+	100% {margin-left: 100%;}
+}
+@-moz-keyframes moveclouds {
+	0% {margin-left: 100%;}
+	30% {margin-left: 0%;}
+	100% {margin-left: 100%;}
+}
+@-o-keyframes moveclouds {
+	0% {margin-left: 100%;}
+	30% {margin-left: 0%;}
+	100% {margin-left: 100%;}
 }
 
-th td {
-	background-color: white;
+@-webkit-keyframes moveclouds2 {
+	0% {margin-left: 80%;}
+	50% {margin-left: -10%;}
+	100% {margin-left: 90%;}
+}
+@-moz-keyframes moveclouds2 {
+	0% {margin-left: 100%;}
+	50% {margin-left: 0%;}
+	100% {margin-left: 80%;}
+}
+@-o-keyframes moveclouds2 {
+	0% {margin-left: 100%;}
+	50% {margin-left: 0%;}
+	100% {margin-left: 80%;}
+}
+
+@-webkit-keyframes moveclouds3 {
+	0% {margin-left: 100%;}
+	70% {margin-left: 0%;}
+	100% {margin-left: 90%;}
+}
+@-moz-keyframes moveclouds3 {
+	0% {margin-left: 100%;}
+	70% {margin-left: 0%;}
+	100% {margin-left: 90%;}
+}
+@-o-keyframes moveclouds3 {
+	0% {margin-left: 0%;}
+	70% {margin-left: 100%;}
+	100% {margin-left: 90%;}
+}
+
+@-webkit-keyframes balloonMove {
+	0% {margin-top: 0%;}
+	50% {margin-top: 3%;}
+	100% {margin-top: 0%;}
+}
+@-moz-keyframes balloonMove {
+	0% {margin-left: 0%;}
+	50% {margin-left: 4%;}
+	100% {margin-left: 0%;}
+}
+@-o-keyframes balloonMove {
+	0% {margin-left: 0%;}
+	50% {margin-left: 4%;}
+	100% {margin-left: 0%;}
+}
+
+@-webkit-keyframes meteorMove {
+	0% {margin-left: 0%;}
+	100% {margin-left: 100%;}
+}
+@-moz-keyframes meteorMove {
+	0% {margin-left: 0%;}
+	50% {margin-left: 4%;}
+	100% {margin-left: 0%;}
+}
+@-o-keyframes meteorMove {
+	0% {margin-left: 0%;}
+	50% {margin-left: 4%;}
+	100% {margin-left: 0%;}
 }
