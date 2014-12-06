@@ -11,12 +11,14 @@
 	height: 50vh;	
 }
 
+
+
 .table, .table-bordered {
 	@include vertical-align;
 	margin-right: 25px;
 	margin-bottom: 0;
-	max-width: 40%;
 	width: 50%;
+	overflow: auto;
 	background-color: rgba(255, 255, 255, .8);
 	border: 3px solid white;
 }
@@ -258,3 +260,4 @@
 	50% {margin-left: 4%;}
 	100% {margin-left: 0%;}
 }
+
