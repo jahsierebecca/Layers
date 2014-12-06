@@ -1,0 +1,94 @@
+.layer {
+  height: 20vh; }
+
+#inner-core {
+  background-image: url(../img/InnerCore.png);
+  background-color: #F1C919; }
+
+#outer-core {
+  background-image: url(../img/OuterCore.png);
+  background-color: #FCA41C; }
+
+#Mantle {
+  background-image: url(../img/Mantle.png);
+  background-color: #BB2026; }
+
+#Crust {
+  background-image: url(../img/Crust.png);
+  background-color: #9E301F; }
+
+#Earth {
+  background-color: green; }
+
+#Troposphere {
+  position: relative;
+  height: 80vh;
+  background-image: url(../img/Troposphere.png);
+  background-color: #80D6F7; }
+  #Troposphere img {
+    position: absolute;
+    vertical-align: bottom; }
+  #Troposphere #everest {
+    bottom: 0; }
+  #Troposphere #clouds1 {
+    left: 60%; }
+
+#Stratosphere {
+  background-image: url(../img/Stratosphere.png);
+  background-color: #00ADEF; }
+
+#Mesosphere {
+  background-image: url(../img/Mesosphere.png);
+  background-color: #3478FF; }
+
+#Thermosphere {
+  background-color: #246CFE; }
+
+#Exosphere {
+  background-color: #2D3393; }
+
+#Moon {
+  height: 70vh;
+  background-image: url(../img/Space1.png);
+  background-color: grey; }
+
+#Mars {
+  height: 70vh;
+  background-image: url(../img/Space2.png);
+  background-color: red; }
+
+#Jupiter {
+  height: 70vh;
+  background-image: url(../img/Space3.png);
+  background-color: red; }
+
+#Saturn {
+  height: 70vh;
+  background-image: url(../img/Space4.png);
+  background-color: black; }
+
+#Uranus {
+  background-image: url(../img/AllSpace.png);
+  background-color: black; }
+
+#Neptune {
+  background-image: url(../img/AllSpace.png);
+  background-color: black; }
+
+#Pluto {
+  background-image: url(../img/AllSpace.png);
+  background-color: black; }
+
+#local-galactic-group {
+  background-image: url(../img/AllSpace.png);
+  background-color: black; }
+
+#Sirius {
+  background-image: url(../img/AllSpace.png);
+  background-color: black; }
+
+#galactic-core {
+  background-image: url(../img/AllSpace.png);
+  background-color: black; }
+
+/*# sourceMappingURL=main.css.map */
