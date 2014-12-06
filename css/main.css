@@ -9,6 +9,7 @@
   -ms-transform: translateY(-50%);
   transform: translateY(-50%);
   margin-right: 25px;
+  margin-bottom: 0;
   max-width: 40%;
   width: 50%;
   background-color: rgba(255, 255, 255, 0.8);
@@ -84,11 +85,11 @@ img {
   -moz-animation: meteorMove 5s linear infinite;
   -o-animation: meteroMove 5s linear infinite; }
 
-#meteor2 {
-  top: 10px;
-  -webkit-animation: meteorMove 2s linear infinite;
-  -moz-animation: meteorMove 2s linear infinite;
-  -o-animation: meteroMove 2s linear infinite; }
+#meteor1 {
+  margin-top: 90px;
+  -webkit-animation: meteorMove 8s linear infinite;
+  -moz-animation: meteorMove 8s linear infinite;
+  -o-animation: meteroMove 8s linear infinite; }
 
 #Thermosphere {
   background-color: #246CFE; }
