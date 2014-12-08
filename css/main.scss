@@ -6,6 +6,13 @@
   transform: translateY(-50%);
 }
 
+/*******************************
+.welcome {
+	height: 200px;
+	background-color: white;
+}
+****************************************/
+
 .layer {
 	position: relative;
 	height: 50vh;	
@@ -181,6 +188,7 @@
 	background-image: url(../img/AllSpace.png);
 	background-color: black;
 }
+
 
 @-webkit-keyframes moveclouds {
 	0% {margin-left: 100%;}
