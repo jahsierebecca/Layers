@@ -4,6 +4,10 @@
 	background-color: white;
 }
 ****************************************/
+.container-fluid {
+  background-repeat: no-repeat;
+  background-size: cover; }
+
 .layer {
   position: relative;
   height: 50vh; }
@@ -47,18 +51,16 @@ img {
   background-image: url(../img/InnerCore.png);
   height: 100vh;
   box-size: border-box;
-  top: 50%;
-  padding: 10%; }
+  top: 50%; }
   #welcome #welcomePop {
     margin-left: auto;
     margin-right: auto;
-    width: 80%;
     padding: 15%;
-    background-color: rgba(255, 255, 255, 0.8); }
-    #welcome #welcomePop a {
-      text-align: center; }
-  #welcome h1, #welcome p, #welcome a {
-    text-align: center; }
+    background-color: rgba(255, 255, 255, 0.8);
+    width: 60%; }
+
+h1, p, a {
+  text-align: center; }
 
 #inner-core {
   background-image: url(../img/InnerCore.png); }
@@ -140,24 +142,42 @@ img {
   height: 70vh;
   background-image: url(../img/Space2.png);
   background-color: red; }
+  #Mars img {
+    margin-left: 50px;
+    max-width: 175px;
+    max-height: 175px; }
 
 #Jupiter {
   height: 70vh;
   background-image: url(../img/Space3.png);
   background-color: red; }
+  #Jupiter img {
+    margin-left: 150px;
+    max-width: 275px;
+    max-height: 275px; }
 
 #Saturn {
   height: 70vh;
   background-image: url(../img/Space4.png);
   background-color: black; }
+  #Saturn img {
+    margin-left: 200px;
+    max-width: 255px;
+    max-height: 255px; }
 
 #Uranus {
   background-image: url(../img/AllSpace.png);
   background-color: black; }
+  #Uranus img {
+    margin-left: 225px;
+    max-width: 215px;
+    max-height: 215px; }
 
 #Neptune {
   background-image: url(../img/AllSpace.png);
   background-color: black; }
+  #Neptune img {
+    margin-left: 400px; }
 
 #Pluto {
   background-image: url(../img/AllSpace.png);

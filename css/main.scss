@@ -13,6 +13,11 @@
 }
 ****************************************/
 
+.container-fluid {
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
 .layer {
 	position: relative;
 	height: 50vh;	
@@ -63,17 +68,15 @@ p {
   #welcomePop {
   	margin-left: auto;
   	margin-right: auto;
-  	width: 400px;
   	padding: 15%;
   	background-color: rgba(255, 255, 255, .8);
-  	a {
-  	text-align: center;
+  	width: 60%;
   }
   }
   h1, p, a {
   	text-align: center;
   }
-}
+
 
 #inner-core {
 	background-image: url(../img/InnerCore.png);
@@ -172,28 +175,51 @@ p {
 	height: 70vh;
 	background-image: url(../img/Space2.png);
 	background-color: red;
+	img {
+		margin-left: 50px;
+		max-width: 175px;
+		max-height: 175px;
+	}
 }
 
 #Jupiter {
 	height: 70vh;	
 	background-image: url(../img/Space3.png);
 	background-color: red;
+	img {
+		margin-left: 150px;
+		max-width: 275px;
+		max-height: 275px;
+	}
 }
 
 #Saturn {
 	height: 70vh;	
 	background-image: url(../img/Space4.png);
 	background-color: black;
+		img {
+		margin-left: 200px;	
+		max-width: 255px;
+		max-height: 255px;
+	}
 }
 
 #Uranus {
 	background-image: url(../img/AllSpace.png);
 	background-color: black;
+		img {
+		margin-left: 225px;	
+		max-width: 215px;
+		max-height: 215px;
+	}
 }
 
 #Neptune {
 	background-image: url(../img/AllSpace.png);
 	background-color: black;
+	img {
+		margin-left: 400px;
+	}
 }
 
 #Pluto {
